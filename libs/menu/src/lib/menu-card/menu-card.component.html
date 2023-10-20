@@ -1,0 +1,14 @@
+<div
+  class="relative w-[140px] h-[140px] border-2 border-solid border-black cursor-pointer"
+  [class.border-none]="isSelected"
+  [id]="card.id"
+>
+  <div [class.menu-card-layer]="isSelected"></div>
+
+  <div
+    class="w-full h-[110px] flex justify-center items-center bg-slate-300"
+  >
+    <mat-icon class="menu-icon">{{card.icon}}</mat-icon>
+  </div>
+  <div class="h-[30px] font-medium flex items-center ml-[10px]">{{card.name | titlecase}}</div>
+</div>

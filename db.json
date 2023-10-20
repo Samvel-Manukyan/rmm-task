@@ -1,0 +1,24 @@
+{
+  "applications": [
+    {
+      "id": "e3fc5cb2-2a94-460d-a64d-9887b392d85b",
+      "name": "aardwolf",
+      "icon": "pets"
+    },
+    {
+      "id": "16d810d6-22bd-4bc7-929c-446724c0a940",
+      "name": "owl",
+      "icon": "email"
+    },
+    {
+      "id": "fd46c023-73ac-4485-947e-c845ee4b3baa",
+      "name": "beetle",
+      "icon": "gavel"
+    },
+    {
+      "id": "68f2f64a-b939-4f00-af24-17750855bef8",
+      "name": "meadowlark",
+      "icon": "videogame_asset"
+    }
+  ]
+}

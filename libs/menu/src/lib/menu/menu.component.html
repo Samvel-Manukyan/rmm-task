@@ -1,0 +1,20 @@
+<mat-toolbar>
+  <span>Menu</span>
+  <span class="flex-1"></span>
+  <button mat-icon-button [disabled]="!selectedCard()?.id" (click)="deleteCard()">
+    <mat-icon>remove</mat-icon>
+  </button>
+  <button mat-icon-button (click)="addCard()">
+    <mat-icon>add</mat-icon>
+  </button>
+</mat-toolbar>
+
+<div class="p-4 flex flex-wrap gap-6" (click)="onCardClick($event.target)">
+  <menu-card
+    *ngFor="let card of cardList(); trackBy: trackByFn"
+    [card]="card"
+    [isSelected]="card.id === selectedCard()?.id"
+    class="w-[140px]"
+  >
+  </menu-card>
+</div>
